@@ -87,6 +87,8 @@ export const loginUser = async (req, res) => {
       res.status(500).json({ message: err.message });
   }
 };
+
+
 export const refreshToken = async (req, res) => {
   const refreshToken = req.cookies.refreshToken;
 

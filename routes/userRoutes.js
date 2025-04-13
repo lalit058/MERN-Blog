@@ -1,16 +1,15 @@
 import express from "express";
-import { register,loginuser} from "../controllers/authController.js";
+import { registerUser,loginUser} from "../controllers/authController.js";
 
 const router = express.Router();
 
 //Route for signing up a new user
-router.post('/signup', register);
+router.post('/signup', registerUser);
 
 //Route for logging in a user
-router.post('/login',loginuser);
+router.post('/login',loginUser);
 
 //mongodb://localhost:27017/
-
 
 
 export default router;
